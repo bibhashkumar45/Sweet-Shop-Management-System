@@ -1,3 +1,5 @@
+process.env.JWT_SECRET = "testsecret";
+
 import mongoose from "mongoose";
 import { MongoMemoryServer } from "mongodb-memory-server";
 
@@ -7,16 +9,7 @@ beforeAll(async () => {
   mongo = await MongoMemoryServer.create();
   const uri = mongo.getUri();
   await mongoose.connect(uri);
-}, 30000); // extra safety
-
-afterEach(async () => {
-  if (mongoose.connection.readyState === 1) {
-    const collections = await mongoose.connection.db.collections();
-    for (let collection of collections) {
-      await collection.deleteMany({});
-    }
-  }
-});
+}, 30000);
 
 afterAll(async () => {
   if (mongoose.connection.readyState === 1) {
@@ -26,3 +19,4 @@ afterAll(async () => {
     await mongo.stop();
   }
 });
+

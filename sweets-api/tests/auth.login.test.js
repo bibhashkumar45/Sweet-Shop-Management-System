@@ -5,8 +5,7 @@ describe("Auth Login API", () => {
 
   it("should login user and return token", async () => {
 
-    // First register user
-    await request(app)
+    const registerRes = await request(app)
       .post("/api/auth/register")
       .send({
         name: "Bibhash",
@@ -14,7 +13,8 @@ describe("Auth Login API", () => {
         password: "123456",
       });
 
-    //  Now login
+    expect(registerRes.statusCode).toBe(200);
+
     const res = await request(app)
       .post("/api/auth/login")
       .send({
