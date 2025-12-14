@@ -237,15 +237,18 @@ npm start
 
 ![](screenshots/purchasehistory.jpg)
 
-
-
-
-
-
-
 > 📌 **Sequence:** Login as User → Purchase → History → Login as Admin → Add/Update Sweets → View Updated Inventory
 
 ---
+
+## 🔗 Project Links
+
+### 📦 Backend Repository
+➡️ https://sweet-shop-management-system-jlue.onrender.com
+
+### 🎨 Frontend Repository
+➡️ https://sweet-shop-management-system-79e8.vercel.app/
+
 
 ## 👨‍💻 Author
 
