@@ -150,6 +150,18 @@ This project follows **TDD principles** for backend logic:
 2. 🟢 Green – Implement minimal logic to pass test
 3. 🔵 Refactor – Improve code without breaking tests
 
+4. ### 3️⃣ Home Page
+
+![Purchase History](screenshots/home.jpg)
+
+### 5️⃣ Register Page
+
+![Admin Update](screenshots/resister.jpg)
+
+### 6️⃣ User Login
+
+![Updated Sweets](screenshots/userlogin.jpg)
+
 > Due to time constraints, core APIs were prioritized. TDD structure is prepared for future extension.
 
 ---
