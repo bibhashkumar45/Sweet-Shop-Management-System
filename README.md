@@ -150,17 +150,17 @@ This project follows **TDD principles** for backend logic:
 2. 🟢 Green – Implement minimal logic to pass test
 3. 🔵 Refactor – Improve code without breaking tests
 
-4. ### 3️⃣ Home Page
+4. ### 3️⃣ Red Test
 
-![Purchase History](screenshots/home.jpg)
+![](screenshots/failtest.jpg)
 
-### 5️⃣ Register Page
+### 5️⃣ Green Test
 
-![Admin Update](screenshots/resister.jpg)
+![](screenshots/green.jpg)
 
-### 6️⃣ User Login
+### 6️⃣ All Api Pass Test
 
-![Updated Sweets](screenshots/userlogin.jpg)
+![](screenshots/allpass.jpg)
 
 > Due to time constraints, core APIs were prioritized. TDD structure is prepared for future extension.
 
@@ -211,15 +211,15 @@ npm start
 
 ### 3️⃣ Home Page
 
-![Purchase History](screenshots/home.jpg)
+![](screenshots/home.jpg)
 
 ### 5️⃣ Register Page
 
-![Admin Update](screenshots/resister.jpg)
+![](screenshots/resister.jpg)
 
 ### 6️⃣ User Login
 
-![Updated Sweets](screenshots/userlogin.jpg)
+![](screenshots/userlogin.jpg)
 
 ### 7 User Perchase
 
