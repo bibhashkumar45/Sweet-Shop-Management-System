@@ -150,7 +150,14 @@ This project follows **TDD principles** for backend logic:
 2. 🟢 Green – Implement minimal logic to pass test
 3. 🔵 Refactor – Improve code without breaking tests
 
-4. ### 3️⃣ Red Test
+   ## 🧪 Running Tests (Backend)
+All backend tests are written using **Jest**.
+### ▶️ Run all tests
+```bash
+npm test
+
+
+5. ### 3️⃣ Red Test
 
 ![](screenshots/failtest.jpg)
 
@@ -239,14 +246,35 @@ npm start
 
 > 📌 **Sequence:** Login as User → Purchase → History → Login as Admin → Add/Update Sweets → View Updated Inventory
 
+## 🤖 Use of AI (ChatGPT)
+
+ChatGPT was used as a **supporting tool** during the development of this project for:
+
+- 🎨 **UI & CSS enhancement ideas** (color grading, layout improvements)
+- 🧪 **Guidance on writing and structuring backend tests**
+- 💡 **Brainstorming project ideas and feature improvements**
+- 📄 Improving **README documentation clarity and structure**
+
+### Important Note
+- All **core logic, API implementation, and project structure** were designed and implemented by me.
+- ChatGPT was used only for **learning support, best practices, and idea validation**, not for blind copy-pasting.
+- Every suggestion was **understood, modified, and integrated** manually.
+
+This reflects my ability to:
+- Use modern AI tools responsibly
+- Learn quickly and apply concepts effectively
+- Improve code quality, testing approach, and documentation
+
+
+
 ---
 
 ## 🔗 Project Links
 
-### 📦 Backend Repository
+### 📦 Backend URL
 ➡️ https://sweet-shop-management-system-jlue.onrender.com
 
-### 🎨 Frontend Repository
+### 🎨 Frontend URL
 ➡️ https://sweet-shop-management-system-79e8.vercel.app/
 
 
