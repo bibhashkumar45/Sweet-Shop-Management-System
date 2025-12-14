@@ -5,7 +5,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest --runInBand",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
@@ -21,6 +21,7 @@
     "mongoose": "^9.0.1"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "nodemon": "^3.1.11"
   }
 }

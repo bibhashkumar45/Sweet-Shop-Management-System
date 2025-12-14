@@ -1,4 +1,5 @@
 export default {
   testEnvironment: "node",
   setupFilesAfterEnv: ["<rootDir>/tests/setup.js"],
+  testTimeout: 30000, // 30 seconds (for MongoDB download)
 };
