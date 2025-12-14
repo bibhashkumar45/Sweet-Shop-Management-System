@@ -274,7 +274,7 @@ This reflects my ability to:
 ### 📦 Backend URL
 ➡️ https://sweet-shop-management-system-jlue.onrender.com
 
-### 🎨 Frontend URL
+### 🎨 Frontend URL & Project URL
 ➡️ https://sweet-shop-management-system-79e8.vercel.app/
 
 
@@ -290,5 +290,10 @@ MERN Stack Developer
 * 🔗 LinkedIn: [https://www.linkedin.com/in/bibhash4587/](https://www.linkedin.com/in/bibhash4587/)
 
 ---
+
+## 🙏 Special Thanks
+
+Special thanks to **Incubyte** for providing this assignment, which offered valuable hands-on experience in full-stack development.
+
 
 ⭐ If you like this project, don’t forget to **star the repository**!
