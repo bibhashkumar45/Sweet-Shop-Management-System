@@ -203,23 +203,27 @@ npm start
 
 ### 2️⃣ User Views Sweets & Purchases
 
-![User Purchase](screenshots/02-user-purchase.png)
+![User Purchase](screenshots/allsweetsadmin.jpg)
 
 ### 3️⃣ User Purchase History
 
-![Purchase History](screenshots/03-purchase-history.png)
+![Purchase History](screenshots/home.jpg)
 
 ### 4️⃣ Admin Login
 
-![Admin Login](screenshots/04-admin-login.png)
+![Admin Login](screenshots/purchasehistory.jpg)
 
 ### 5️⃣ Admin Adds / Updates Sweets
 
-![Admin Update](screenshots/05-admin-update.png)
+![Admin Update](screenshots/resister.jpg)
 
 ### 6️⃣ Updated Sweets Visible to Users
 
-![Updated Sweets](screenshots/06-updated-sweets.png)
+![Updated Sweets](screenshots/userlogin.jpg)
+
+### 7 Updated Sweets Visible to Users
+
+![Updated Sweets](screenshots/userperchase.jpg)
 
 > 📌 **Sequence:** Login as User → Purchase → History → Login as Admin → Add/Update Sweets → View Updated Inventory
 
