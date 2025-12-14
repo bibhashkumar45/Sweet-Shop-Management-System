@@ -2,7 +2,6 @@
 // automatically attach JWT token to requests for authenticated access.
 
 import axios from "axios";
-
 const api = axios.create({
   baseURL: "https://sweet-shop-management-system-jlue.onrender.com/api",
 });
