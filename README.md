@@ -199,7 +199,7 @@ npm start
 
 ### 1️⃣ User Login
 
-![User Login](screenshots/addsweets.png)
+![User Login](screenshots/addsweets.jpg)
 
 ### 2️⃣ User Views Sweets & Purchases
 
