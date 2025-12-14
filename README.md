@@ -137,7 +137,6 @@ backend/
   * Purchase date
 * Users can view **total amount spent**
 * Clean UI with **green-highlighted monetary values**
-
 ---
 
 ## 🧪 Test-Driven Development (TDD)
@@ -150,15 +149,16 @@ This project follows **TDD principles** for backend logic:
 2. 🟢 Green – Implement minimal logic to pass test
 3. 🔵 Refactor – Improve code without breaking tests
 
-   ## 🧪 Running Tests (Backend)
+## ✅ Final Safe Version (Recommended)
+
+## 🧪 Running Tests (Backend)
+
 All backend tests are written using **Jest**.
 ### ▶️ Run all tests
-```bash
-npm test
+- Run all backend tests using `npm test`
 
 
-5. ### 3️⃣ Red Test
-
+ ### 3️⃣ Red Test
 ![](screenshots/failtest.jpg)
 
 ### 5️⃣ Green Test
