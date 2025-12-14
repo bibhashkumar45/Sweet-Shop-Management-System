@@ -197,33 +197,39 @@ npm start
 
 > **Add these images to a `screenshots/` folder in your repo and update paths if needed.**
 
-### 1️⃣ User Login
-
-![User Login](screenshots/addsweets.jpg)
-
-### 2️⃣ User Views Sweets & Purchases
-
-![User Purchase](screenshots/allsweetsadmin.jpg)
-
-### 3️⃣ User Purchase History
+### 3️⃣ Home Page
 
 ![Purchase History](screenshots/home.jpg)
 
-### 4️⃣ Admin Login
-
-![Admin Login](screenshots/purchasehistory.jpg)
-
-### 5️⃣ Admin Adds / Updates Sweets
+### 5️⃣ Register Page
 
 ![Admin Update](screenshots/resister.jpg)
 
-### 6️⃣ Updated Sweets Visible to Users
+### 6️⃣ User Login
 
 ![Updated Sweets](screenshots/userlogin.jpg)
 
-### 7 Updated Sweets Visible to Users
+### 7 User Perchase
 
-![Updated Sweets](screenshots/userperchase.jpg)
+![](screenshots/userperchase.jpg)
+
+### 2️⃣ Admin Views Sweets 
+
+![](screenshots/allsweetsadmin.jpg)
+
+### 1️⃣ Admin Add Sweets
+
+![](screenshots/addsweets.jpg)
+
+### 4️⃣ Perchase History
+
+![](screenshots/purchasehistory.jpg)
+
+
+
+
+
+
 
 > 📌 **Sequence:** Login as User → Purchase → History → Login as Admin → Add/Update Sweets → View Updated Inventory
 
