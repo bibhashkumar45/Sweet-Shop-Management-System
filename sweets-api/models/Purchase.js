@@ -1,4 +1,9 @@
-// models/Purchase.js
+// This model represents a purchase record in the system.
+// It stores information about which user bought which sweet,
+// along with quantity, price, total amount, and timestamps.
+// Using references allows easy population of related user
+// and sweet details when fetching purchase history.
+
 import mongoose from "mongoose";
 
 const purchaseSchema = new mongoose.Schema(

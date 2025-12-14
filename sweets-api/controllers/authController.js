@@ -1,6 +1,12 @@
+// This controller handles authentication-related operations.
+// It contains logic for user registration and login.
+// Passwords are securely hashed and JWT tokens are generated
+// to manage user authentication in a safe and scalable way.
+
 import User from "../models/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+
 export const registerUser = async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
@@ -17,6 +23,7 @@ export const registerUser = async (req, res) => {
     res.status(400).json({ msg: err.message });
   }
 };
+
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;

@@ -1,3 +1,8 @@
+// This middleware protects private routes using JWT authentication.
+// It verifies the token sent in the Authorization header and
+// attaches the decoded user information to the request object
+// so it can be used by subsequent middleware and controllers.
+
 import jwt from "jsonwebtoken";
 
 export const protect = (req, res, next) => {
@@ -10,7 +15,7 @@ export const protect = (req, res, next) => {
 
   try {
     const userData = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = userData; // add user data to request
+    req.user = userData; 
     next();
   } catch (err) {
     res.status(401).json({ msg: "Token invalid" });

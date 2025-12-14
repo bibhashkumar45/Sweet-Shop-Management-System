@@ -1,3 +1,8 @@
+// This route file handles all authentication-related endpoints.
+// It connects HTTP routes to their respective controller functions
+// and applies middleware for protected and admin-only access.
+// Separating routes from controllers keeps the code modular and readable.
+
 import express from "express";
 import { registerUser, loginUser } from "../controllers/authController.js";
 import { protect } from "../middleware/auth.js";
@@ -8,12 +13,11 @@ const router = express.Router();
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 
-// Example protected route
 router.get("/me", protect, (req, res) => {
   res.json({ msg: "Hello user!", user: req.user });
 });
 
-// Example admin-only route
+//admin-only route
 router.get("/admin", protect, adminOnly, (req, res) => {
   res.json({ msg: "Hello Admin!" });
 });

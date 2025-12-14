@@ -1,3 +1,8 @@
+// This test verifies the complete purchase flow using TDD.
+// It ensures that an admin can add a sweet, a user can log in,
+// and the user can successfully purchase a sweet.
+// The test validates quantity reduction and correct total amount calculation.
+
 import request from "supertest";
 import app from "../app.js";
 

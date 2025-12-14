@@ -1,3 +1,8 @@
+// This test checks the user registration functionality of the auth API.
+// It ensures that a new user can successfully register and receive
+// a proper success response. This test is written following the
+// Test-Driven Development (TDD) approach.
+
 import request from "supertest";
 import app from "../app.js";
 

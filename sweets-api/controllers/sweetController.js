@@ -1,6 +1,10 @@
+// This controller manages all sweet-related business logic.
+// It includes CRUD operations for sweets, searching and filtering,
+// purchasing sweets by users, and restocking inventory by admins.
+// Purchase history is also recorded to maintain transactional data.
+
 import Sweet from "../models/Sweet.js";
 import Purchase from "../models/Purchase.js";
-
 
 // Add new sweet
 export const addSweet = async (req, res) => {
@@ -45,19 +49,6 @@ export const deleteSweet = async (req, res) => {
 };
 
 // Purchase sweet
-// export const purchaseSweet = async (req, res) => {
-//   const sweet = await Sweet.findById(req.params.id);
-//   const { qty } = req.body;
-//   const amount = qty && qty > 0 ? qty : 1;
-
-//   if (sweet.quantity <= 0)
-//     return res.status(400).json({ msg: "Out of stock" });
-
-//   sweet.quantity -= amount;
-//   await sweet.save();
-//   res.json({ msg: "Purchased", sweet });
-// };
-
 export const purchaseSweet = async (req, res) => {
   try {
     const sweet = await Sweet.findById(req.params.id);
@@ -69,13 +60,11 @@ export const purchaseSweet = async (req, res) => {
     if (sweet.quantity < amount)
       return res.status(400).json({ msg: "Out of stock" });
 
-    // 1️⃣ Reduce stock
     sweet.quantity -= amount;
     await sweet.save();
 
-    // 2️⃣ Save purchase history
     const purchase = await Purchase.create({
-      user: req.user.id,          // from JWT
+      user: req.user.id,
       sweet: sweet._id,
       sweetName: sweet.name,
       price: sweet.price,
@@ -92,22 +81,9 @@ export const purchaseSweet = async (req, res) => {
   }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Restock sweet (Admin only)
 export const restockSweet = async (req, res) => {
-  const amount = parseInt(req.body.amount); 
+  const amount = parseInt(req.body.amount);
   const sweet = await Sweet.findById(req.params.id);
 
   sweet.quantity += amount;
@@ -127,4 +103,3 @@ export const getSweetById = async (req, res) => {
     res.status(400).json({ msg: "Invalid sweet id" });
   }
 };
-

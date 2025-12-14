@@ -1,3 +1,8 @@
+// This test verifies that an admin user can successfully add a new sweet.
+// It follows the TDD approach by first authenticating an admin and then
+// checking that the sweet creation API works correctly when proper
+// authorization is provided.
+
 import request from "supertest";
 import app from "../app.js";
 

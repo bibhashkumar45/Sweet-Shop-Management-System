@@ -1,3 +1,7 @@
+// This test verifies the login functionality of the authentication API.
+// It follows the TDD approach by first registering a user and then
+// ensuring that the same user can successfully log in and receive a JWT token.
+
 import request from "supertest";
 import app from "../app.js";
 
