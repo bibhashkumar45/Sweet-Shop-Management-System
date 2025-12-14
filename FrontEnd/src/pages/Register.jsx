@@ -6,9 +6,13 @@ import { useState, useContext } from "react";
 import api from "../api/api";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Register() {
   const { loginUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+
 
   const [form, setForm] = useState({
     name: "",
@@ -48,7 +52,7 @@ export default function Register() {
       loginUser(me.data.user);
 
       toast.success("Account created successfully");
-      window.location.href = "/dash";
+     navigate("/dash");
     } catch {
       toast.error("Registration failed");
     }

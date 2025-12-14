@@ -7,9 +7,16 @@ import api from "../api/api";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+
+
+
+
+
 
 export default function Login() {
   const { loginUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -39,7 +46,7 @@ export default function Login() {
       loginUser(me.data.user);
 
       toast.success("Login successful 🎉");
-      window.location.href = "/dash";
+      navigate("/dash");
     } catch {
       toast.error("Invalid email or password ❌");
     }

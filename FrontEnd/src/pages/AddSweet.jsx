@@ -4,9 +4,11 @@
 import { useState } from "react";
 import api from "../api/api";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export default function AddSweet() {
   const [f, setF] = useState({});
+    const navigate = useNavigate();
 
   async function submit(e) {
     e.preventDefault();
@@ -26,9 +28,7 @@ export default function AddSweet() {
 
       toast.success("Sweet added successfully 🍬");
 
-      setTimeout(() => {
-        window.location.href = "/dash";
-      }, 1200);
+       navigate("/dash");
     } catch {
       toast.error("Failed to add sweet ❌");
     }

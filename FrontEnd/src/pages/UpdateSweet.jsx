@@ -6,9 +6,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../api/api";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export default function UpdateSweet() {
   const { id } = useParams();
+    const navigate = useNavigate();
 
   const [sweet, setSweet] = useState({
     name: "",
@@ -38,10 +40,7 @@ export default function UpdateSweet() {
       });
 
       toast.success("Sweet updated successfully");
-
-      setTimeout(() => {
-        window.location.href = "/dash";
-      }, 1200);
+     navigate("/dash");
     } catch {
       toast.error("Update failed");
     }
